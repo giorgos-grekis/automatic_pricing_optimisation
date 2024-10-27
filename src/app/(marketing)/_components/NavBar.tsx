@@ -17,6 +17,7 @@ export function NavBar() {
         <Link className="text-lg" href={"#"}>
           About
         </Link>
+        <span className="text-lg"></span>
       </nav>
     </header>
   );

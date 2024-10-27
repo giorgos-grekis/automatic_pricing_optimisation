@@ -18,9 +18,13 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["-var(--font-geist-sans)", ...fontFamily.sans],
-        mono: ["-var(--font-geist-mono)", ...fontFamily.mono],
+        sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+        mono: ["var(--font-geist-mono)", ...fontFamily.mono],
       },
+      // fontFamily: {
+      // 	sans: ["var(--font-geist-sans)", ...fontFamily.sans],
+      // 	mono: ["var(--font-geist-mono)", ...fontFamily.mono]
+      // },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
