@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { SignUpButton } from "@clerk/nextjs";
 import { ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
+import { NeonIcon } from "./_icons/Neon";
+import { ClerkIcon } from "./_icons/Clerk";
 
 export default function HomePage() {
   return (
@@ -16,6 +19,45 @@ export default function HomePage() {
             Get started for free <ArrowRightIcon className="size-5" />
           </Button>
         </SignUpButton>
+      </section>
+
+      <section className="bg-primary text-primary-foreground">
+        <div className="container py-16 flex flex-col gap-16 px-8 md:px-16">
+          <h2 className="text-3xl text-center text-balance">Trusted by the top modern companies</h2>
+
+          <div className="grid grid-2 md:grid-cols-3 xl:grid-cols-5 gap-16">
+            <Link href="https://neon.tech" target="_blank" title="Neon Tech">
+              <NeonIcon />
+            </Link>
+            <Link href="https://cleck.com" target="_blank" title="Neon Tech">
+              <ClerkIcon />
+            </Link>
+            <Link href="https://neon.tech" target="_blank" title="Neon Tech">
+              <NeonIcon />
+            </Link>
+            <Link href="https://cleck.com" target="_blank" title="Neon Tech">
+              <ClerkIcon />
+            </Link>
+            <Link href="https://neon.tech" target="_blank" title="Neon Tech">
+              <NeonIcon />
+            </Link>
+            <Link href="https://cleck.com" target="_blank" title="Neon Tech">
+              <ClerkIcon />
+            </Link>
+            <Link href="https://neon.tech" target="_blank" title="Neon Tech">
+              <NeonIcon />
+            </Link>
+            <Link href="https://cleck.com" target="_blank" title="Neon Tech">
+              <ClerkIcon />
+            </Link>
+            <Link href="https://neon.tech" target="_blank" title="Neon Tech">
+              <NeonIcon />
+            </Link>
+            <Link className="md:max-xl:hidden" href="https://cleck.com" target="_blank" title="Neon Tech">
+              <ClerkIcon />
+            </Link>
+          </div>
+        </div>
       </section>
     </>
   );
