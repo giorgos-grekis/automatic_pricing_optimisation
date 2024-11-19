@@ -159,8 +159,8 @@ function PricingCard({
   canAccessAnalytics,
   canCustomizeBanner,
   canRemoveBranding,
-  stripePriceId,
-}: (typeof subscriptionTiersInOrder)[number]) {
+}: // stripePriceId,
+(typeof subscriptionTiersInOrder)[number]) {
   // const isMostPopular = name === "Standard";
 
   const btnVariant = name === "Standard" ? "accent" : "default";
